@@ -28,7 +28,7 @@
 \LoadClass[11pt]{book}
 
 \RequirePackage{setspace}
-\onehalfspacing
+\setstretch{1.2}
 
 \RequirePackage{amsmath}
 \RequirePackage{amssymb}
@@ -192,8 +192,8 @@
     \colorlet{title}{htwg-teal}
 \fi
 
-%% We use A4 paper with default margins (scale = 0.7).
-\geometry{a4paper,hscale=0.7,vscale=0.75}
+%% We use A4 paper with given border.
+\geometry{a4paper,left=30mm,right=30mm,top=30mm,bottom=30mm}
 
 %% Redefine the title command to accept an optional subtitle.
 \renewcommand*\title[2][]{%
