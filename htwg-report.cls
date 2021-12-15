@@ -415,14 +415,24 @@
         \node at (139.8mm,-37mm)[anchor=north west, fill=htwg-dark-blue]{
             \begin{minipage}[t]{55mm}
                 \begin{flushleft}
-                    \color{htwg-white}\scriptsize\textbf{Submitted by}
+                    \color{htwg-white}\scriptsize\textbf{Abgegeben von}
+                    \linebreak
                     \linebreak
                     \color{htwg-white}\scriptsize{\@author}
                     \linebreak 
-                    \color{htwg-white}\scriptsize{Student Number \@student@number}
-                    \linebreak
+                    \color{htwg-white}\scriptsize{Matrikelnummer \@student@number}
                     \linebreak
                     \color{htwg-white}\scriptsize{\@student@email}
+                    \linebreak
+                    \linebreak
+                    und
+                    \linebreak
+                    \linebreak
+                    \color{htwg-white}\scriptsize{Önder Tütünci}
+                    \linebreak 
+                    \color{htwg-white}\scriptsize{Matrikelnummer 298632}
+                    \linebreak
+                    \color{htwg-white}\scriptsize{oe391tue@htwg-konstanz.de}
                 \end{flushleft}
             \end{minipage}
         };
