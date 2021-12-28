@@ -1,2 +1,34 @@
 \chapter{Dynamische Amortisationsrechnung}
 \label{Dynamische Amortisationsrechnung}
+
+\section{Definition}
+Die dynamische Amortisationsrechnung ist ein Verfahren, das Ergebnisse liefert, um eine Entscheidungsvorlage für Investitionen zu schaffen. Es wird die sogenannte Amortisationszeit einer Investition berechnet, die angibt, wann der Kapitaleinsatz einer Investition wieder zurückgeflossen ist. Zusätzlich wird die dynamische Amortisationsrechnung auch verwendet, um das Risiko einer Investition zu bewerten.
+
+\section{Unterschied zwischen statisch und dynamisch}
+Der große Unterschied bei der statischen und dynamischen Amortisationsrechnung ist, dass bei der statischen Variante die Verzinsung des eingesetzten Kapitals unberücksichtigt bleibt. Dies hat zur Folge, dass bei der statischen Variante häufig eine günstigere Amortisationszeit berechnet wird. Diese statische Amortisationsdauer kann zu Entscheidungen führen, die auf ungenauen und falschen Ergebnissen beruhen. In der Praxis wird vor allem die dynamische Variante bevorzugt, weil sie Einzahlungen, Auszahlungen und Nutzungsperioden berücksichtigt. Zusätzlich werden in der dynamischen Amortisationsrechnung finanzmathematische Methoden verwendet, wie die Kapitalwertmethode.
+\newpage
+\section{Interpretation}
+Die Interpretation der dynamischen Amortisationsrechnung ist ähnlich wie bei der statischen Variante. Es wird der Amortisationzeitpunkt
+berechnet, der den Rückfluss des investierten Kapitals einschließlich der Abzinsung auf die Mittel darstellt. Daraus folgt, dass die Amortisationszeit die Mindestnutzungsdauer eines Investitionsobjektes abbildet. Eine kürzere Amortisationszeit entspricht einem kleineren Investitionsrisiko. Genau wie bei den anderen Investitionsrechnungsverfahren, dient die Amortisationszeit als eine weitere Entscheidungshilfe bei der Bewertung von Investitionen.
+\section{Beispiel}
+Herr Mustermann will seine Produktion von Schuhen erhöhen. Dafür überlegt er sich in eine weitere Produktionsmaschine zu investieren. Die Maschine kostet 120 000 Euro und ist 4 Jahre nutzbar. Der kalkulierte Zinssatz beträgt außerdem 12 \%.
+
+\begin{table}[!h]
+    \caption{Beispiel einer dynamischen Amortisationsrechnung auf 4 Jahre mit einem kalkulierten Zinssatz von 12\%}
+    \begin{tabular}{lllllll}
+        \cline{1-6} \rowcolor{gray}
+        Jahr & Einzahlung & Auszahlung & Abzinsfaktor & Barwert  & Kapitalwert \\ \cline{1-6} \rowcolor{white}
+        0    & 0          & 120.000    & $1,12^0$     & -120.000 & -120.000    \\ \cline{1-6} \rowcolor{white}
+        1    & 69.000     & 30.000     & $1,12^1$     & 34821,43 & -85178,57   \\ \cline{1-6} \rowcolor{white}
+        2    & 72.000     & 29.000     & $1,12^2$     & 35076,54 & -50102,04   \\ \cline{1-6} \rowcolor{white}
+        3    & 68.000     & 31.000     & $1,12^3$     & 26335,87 & -23766,17   \\ \cline{1-6} \rowcolor{white}
+        4    & 77.000     & 25.000     & $1,12^4$     & 33046,94 & 9280,77     \\ \cline{1-6} \rowcolor{white}
+        4    & 20.000     & 0          & $1,12^4$     & 12710,36 & 21991,13    \\ \cline{1-6} \rowcolor{white}
+    \end{tabular}
+    \label{tb:dynamische Amortisationsrechnung}
+\end{table}
+\phantom l \\
+Die Amortisationszeit wird im 4. Jahr erreicht. Der Kapitalwert erreicht auch im vierten Jahr einen Wert über null. Daraus Schlussfolgert Herr Mustermann, dass die Investition in eine weitere Produktionsmaschine sinnvoll wäre.
+
+\footnote{https://www.gevestor.de/finanzwissen/oekonomie/betriebswirtschaft/dynamische-amortisationsrechnung-einsatz-finanzmathematischer-methoden-648851.html}
+%https://media.daa-pm.de/ufv_wirtschaftslexikon/Html/P/Pay-off-Methode.html
