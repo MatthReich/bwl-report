@@ -2,17 +2,22 @@
 \label{Vermoegensendwertmethode}
 
 \section{Definition}
+
 Unter der Vermögensendwertmethode versteht man ein dynamisches Investitionsverfahren, bei dem eine durch eine Investition ausgelöste Zahlungsreihe auf einen späteren Zeitpunkt aufgezinst wird.\footnote{\cite{finanzen-vermoegensendwertmethode}} Diese Methode ist ähnlich wie die \hyperref[Kapitalwertmethode]{Kapitalwertmethode}, bezieht sich aber auf den Endwert als Entscheidungsgrundlage.\\
 Die Methode wird auf verschiedene Investitionen angewandt. Danach können die jeweiligen Endwerte miteinander verglichen werden, um das Profitabelste auszuwählen. Ein negativer Wert deutet auf eine eher schlechte Investition hin.\footnote{\cite{bwllernen-endwertmethode}}
 
 \section{Berechnung}
+
 Um den Vermögensendwert zu errechnen, wird folgende Formel \eqref{eq:Vermoegensendwert}\footnote{\cite{studyflix-endwertmethode}} verwendet:
 
 \begin{equation}
     V_T = \sum_{ t = 0 }^{ T }{(E_{ t } - A_{ t })(1 + r)^{T - t}}
     \label{eq:Vermoegensendwert}
 \end{equation}
-\smallskip\\
+
+\bigskip
+
+\noindent
 Hierbei steht E zum Zeitpunkt t für die Einzahlung und A zum Zeitpunkt t für die Auszahlung. Die Differenz wird mit dem Zinssatz r multipliziert. Der Zinssatz ist zudem abhängig von dem Zeitpunkt, da sich dieser über jede Periode mitzieht. Der Vermögensendwert berechnet sich demzufolge aus der Summe der Differenz der Ein- und Ausgaben, auf welche der vom Jahr abhängige Zinssatz multipliziert wurde.\footnote{\cite{studyflix-endwertmethode}}\\
 
 \noindent
@@ -51,7 +56,7 @@ Im ersten Jahr wurde nur eine Anschaffung von einem Betrag von 5000 € getätig
         Anschaffung      & -5000                                &                                      &                                     &                  &        \\ \cline{1-6} \rowcolor{white}
         Einzahlung       &                                      & 1000                                 & 3000                                & 5000             & 15000  \\ \cline{1-6} \rowcolor{white}
         Auszahlung       &                                      & -2000                                & -1500                               & -3000            & -5000  \\ \cline{1-6} \rowcolor{white}
-        & -5000 $\cdot$ 1,1\textsuperscript{4} & -1000 $\cdot$ 1,1\textsuperscript{3} & 1500 $\cdot$ 1,1\textsuperscript{2} & 2000 $\cdot$ 1,1 & 10000  \\ \rowcolor{white}
+                         & -5000 $\cdot$ 1,1\textsuperscript{4} & -1000 $\cdot$ 1,1\textsuperscript{3} & 1500 $\cdot$ 1,1\textsuperscript{2} & 2000 $\cdot$ 1,1 & 10000  \\ \rowcolor{white}
         Vermögensendwert &                                      &                                      &                                     &                  & 5363,5 \\ \cline{1-6}
     \end{tabular}
     \caption{Beispiel einer Vermögensrechnung auf 5 Jahre mit einem Zinssatz von 10\%}
