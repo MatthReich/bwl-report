@@ -2,8 +2,8 @@
 \label{Vermoegensendwertmethode}
 
 \section{Definition}
-Unter der Vermögensendwertmethode versteht man ein dynamisches Investitionsverfahren, bei dem eine durch eine Investition ausgelöste Zahlungsreihe auf einen späteren Zeitpunkt aufgezinst wird.\footnote{\cite{finanzen-vermoegensendwertmethode}} Diese Methode ist ähnlich wie die  \hyperref[Kapitalwertmethode]{Kapitalwertmethode}, bezieht sich aber auf den Endwert als Entscheidungsgrundlage.\\
-Die Methode wird auf verschiedene Investitionen angewandt. Danach können die jeweiligen Endwerte miteinander verglichen werden, um das Provitabelste auszuwählen. Ein negativer Wert deutet auf eine eher schlechte Investition hin.\footnote{\cite{bwllernen-endwertmethode}}
+Unter der Vermögensendwertmethode versteht man ein dynamisches Investitionsverfahren, bei dem eine durch eine Investition ausgelöste Zahlungsreihe auf einen späteren Zeitpunkt aufgezinst wird.\footnote{\cite{finanzen-vermoegensendwertmethode}} Diese Methode ist ähnlich wie die \hyperref[Kapitalwertmethode]{Kapitalwertmethode}, bezieht sich aber auf den Endwert als Entscheidungsgrundlage.\\
+Die Methode wird auf verschiedene Investitionen angewandt. Danach können die jeweiligen Endwerte miteinander verglichen werden, um das Profitabelste auszuwählen. Ein negativer Wert deutet auf eine eher schlechte Investition hin.\footnote{\cite{bwllernen-endwertmethode}}
 
 \section{Berechnung}
 Um den Vermögensendwert zu errechnen, wird folgende Formel \eqref{eq:Vermoegensendwert}\footnote{\cite{studyflix-endwertmethode}} verwendet:
@@ -13,42 +13,55 @@ Um den Vermögensendwert zu errechnen, wird folgende Formel \eqref{eq:Vermoegens
     \label{eq:Vermoegensendwert}
 \end{equation}
 \smallskip\\
-Hierbei steht E zum Zeitpunkt t für die Einzahlung und A zum Zeitpunkt t für die Auszahlung. Die Differenz wird mit dem Zinssatz r multipliziert. Der Zinssatz ist zudem abhängig von dem Zeitpunkt, da sich dieser über jede Periode mitzieht. Der Vermögensendwert berechent sich demzufolge aus der Summe der Differenz der Ein- und Ausgaben, auf welche der vom Jahr abhängige Zinssatz multipliziert wurde.\footnote{\cite{studyflix-endwertmethode}}\\
+Hierbei steht E zum Zeitpunkt t für die Einzahlung und A zum Zeitpunkt t für die Auszahlung. Die Differenz wird mit dem Zinssatz r multipliziert. Der Zinssatz ist zudem abhängig von dem Zeitpunkt, da sich dieser über jede Periode mitzieht. Der Vermögensendwert berechnet sich demzufolge aus der Summe der Differenz der Ein- und Ausgaben, auf welche der vom Jahr abhängige Zinssatz multipliziert wurde.\footnote{\cite{studyflix-endwertmethode}}\\
 
 \noindent
-Anzumerken ist, dass hier nicht mit gänzlich realen Werten gerechnet wird. Der Zinssatz wird vorher kalkuliert und auf geschätze zukünfitige Zahlungen angewandt.\footnote{\cite{finanzen-vermoegensendwertmethode}}
+Anzumerken ist, dass hier nicht mit gänzlich realen Werten gerechnet wird. Der Zinssatz wird vorher kalkuliert und auf geschätzte zukünftige Zahlungen angewandt.\footnote{\cite{finanzen-vermoegensendwertmethode}}
 
 \section{Beispielrechnung}
 
+Das Unternehmen Muster tätigt eine Anschaffung von 5000 €. In den folgenden Jahren tätigt die Firme mehrere Ein- sowie Auszahlungen, welche in der Tabelle \ref{tb:VermoegensendwertDaten} übersichtlich dargestellt sind. Die Werte in der Tabelle sind als Betrag in Euro anzusehen.
 
-\subsection{Rechnung}
-
-In der Tabelle \ref{tb:VermoegensendwertRechnung} wird exemplarisch eine Berechnung mit der Endwertmethode dargestellt. Die Werte sind als Betrag in Euro anzusehen.
 \bigskip
 
 \begin{table}[!h]
-    \caption{Beispiel einer Vermögensrechnung auf 5 Jahre mit einem Zinssatz von 10\%}
     \begin{tabular}{llllll}
         \cline{1-6} \rowcolor{gray}
-        Jahre            & 1                              & 2                              & 3                             & 4          & 5      \\ \cline{1-6} \rowcolor{white}
-        Anschaffung      & -5000                          &                                &                               &            &        \\ \cline{1-6} \rowcolor{white}
-        Einzahlung       &                                & 1000                           & 3000                          & 5000       & 15000  \\ \cline{1-6} \rowcolor{white}
-        Auszahlung       &                                & -2000                          & -1500                         & -3000      & -5000  \\ \cline{1-6} \rowcolor{white}
-                         & -5000 * 1,1\textsuperscript{4} & -1000 * 1,1\textsuperscript{3} & 1500 * 1,1\textsuperscript{2} & 2000 * 1,1 & 10000  \\ \rowcolor{white}
-        Vermögensendwert &                                &                                &                               &            & 5363,5 \\ \cline{1-6}
+        Jahre       & 1     & 2     & 3     & 4     & 5     \\ \cline{1-6} \rowcolor{white}
+        Anschaffung & -5000 &       &       &       &       \\ \cline{1-6} \rowcolor{white}
+        Einzahlung  &       & 1000  & 3000  & 5000  & 15000 \\ \cline{1-6} \rowcolor{white}
+        Auszahlung  &       & -2000 & -1500 & -3000 & -5000 \\ \cline{1-6} \rowcolor{white}
     \end{tabular}
-    \label{tb:VermoegensendwertRechnung}
+    \caption{Beispielzahlungen}
+    \label{tb:VermoegensendwertDaten}
 \end{table}
 
 \bigskip
-
 \noindent
-Im ersten Jahr wurde nur eine Anschaffung von einem Betrag von 5000 € getätigt. Da noch vier Jahre bis zu dem gewünschten Vermögensendwert sind, wird der Zinsatz mit vier exponiert. Als erstes Zwischenergebnis hat man im ersten Jahr einen Wert von -7320,5 €. In den folgenden drei Jahren wurden jeweils Ein- sowie Auszahlungen getätigt, wobei deren Differenz mit dem Zinssatz, auch abhängig von der Dauer zu dem gewünschten Jahr, multipliziert wurde. Dementsprechend erhält man die Werte, von Jahr zwei ausgehend, -1331 €, 1815 € und 2200 €. Im dem letzen zu berechnenden Jahr, also dem, von welchem der Vermögensendwert berechnet wird, wird der Zinssatz vernachlässigt, da dieser keine Rolle mehr spielt. Dementsprechend wird nur die Differenz, 10000 €, berechnet. Die Summe der jeweiligen Zwischenergebnisse ergbit dann den Vermögensendwert von 5363,5 €.
+Nun möchte Muster den Vermögensendwert der fünf Jahre, welche in Tabelle \ref{tb:VermoegensendwertDaten} dargestellt sind, errechnen. Dabei gehen sie von einem Zinssatz von 10\% aus.
+
+\subsection{Rechnung}
+
+Im ersten Jahr wurde nur eine Anschaffung von einem Betrag von 5000 € getätigt. Da noch vier Jahre bis zu dem gewünschten Vermögensendwert sind, wird der Zinssatz mit vier exponiert. Als erstes Zwischenergebnis hat man im ersten Jahr einen Wert von $-5000 \cdot 1,1^4 =$ -7320,5 €. In den folgenden drei Jahren wurden jeweils Ein- sowie Auszahlungen getätigt, wobei deren Differenz mit dem Zinssatz, auch abhängig von der Dauer zu dem gewünschten Jahr, multipliziert wurde. Dementsprechend erhält man die Werte, von Jahr zwei ausgehend, -1331 €, 1815 € und 2200 €. In dem letzten zu berechnenden Jahr, also dem, von welchem der Vermögensendwert berechnet wird, wird der Zinssatz vernachlässigt, da dieser keine Rolle mehr spielt. Dementsprechend wird nur die Differenz, 10000 €, berechnet. Die Summe der jeweiligen Zwischenergebnisse ergibt dann den Vermögensendwert von 5363,5 €. Diese Berechnung wird auch in folgender Tabelle \ref{tb:VermoegensendwertRechnung} dargestellt. Die dort verwendeten Werte sind als Betrag in Euro anzusehen.
+
+\begin{table}[!h]
+    \begin{tabular}{llllll}
+        \cline{1-6} \rowcolor{gray}
+        Jahre            & 1                                    & 2                                    & 3                                   & 4                & 5      \\ \cline{1-6} \rowcolor{white}
+        Anschaffung      & -5000                                &                                      &                                     &                  &        \\ \cline{1-6} \rowcolor{white}
+        Einzahlung       &                                      & 1000                                 & 3000                                & 5000             & 15000  \\ \cline{1-6} \rowcolor{white}
+        Auszahlung       &                                      & -2000                                & -1500                               & -3000            & -5000  \\ \cline{1-6} \rowcolor{white}
+        & -5000 $\cdot$ 1,1\textsuperscript{4} & -1000 $\cdot$ 1,1\textsuperscript{3} & 1500 $\cdot$ 1,1\textsuperscript{2} & 2000 $\cdot$ 1,1 & 10000  \\ \rowcolor{white}
+        Vermögensendwert &                                      &                                      &                                     &                  & 5363,5 \\ \cline{1-6}
+    \end{tabular}
+    \caption{Beispiel einer Vermögensrechnung auf 5 Jahre mit einem Zinssatz von 10\%}
+    \label{tb:VermoegensendwertRechnung}
+\end{table}
 
 \subsection{Interpretation}
 
-Ohne Betrachtung anderer Vermögensendwerten ist das Ergebnis von 5363,5 € ein Wert, bei dem man durchaus in betracht ziehen könnte, diese Investition zu tätigen, da kein Verlust entseht. Ein Verlust wär an einem negativen Ergebnis erkennbar.
+Ohne Betrachtung anderer Vermögensendwerten ist das Ergebnis von 5363,5 € ein Wert, bei dem man durchaus in Betracht ziehen könnte, diese Investition zu tätigen, da kein Verlust entsteht. Ein Verlust wäre an einem negativen Ergebnis erkennbar.
 
 \section{Bewertung}
 
-Wie bereits weiter oben geschrieben, basiert diese Berechnung sehr darauf, dass Werte kalkulierten werden, die möglichst Nah an den Realen liegen. Im Gesamten ist diese Methode vielleicht eher unpräzise, aber da es um den Vergleich der unter den gleichen Umständen entstandenen Vermögensendwert geht, ist sie trotzdem eine gute Einschätzung für die zu tätitgende Investition.
+Wie bereits weiter oben geschrieben, basiert diese Berechnung sehr darauf, dass Werte kalkulierten werden, die möglichst nah an den Realen liegen. Im Gesamten ist diese Methode vielleicht eher unpräzise, aber da es um den Vergleich der unter den gleichen Umständen entstandenen Vermögensendwert geht, ist sie trotzdem eine gute Einschätzung für die zu tätigende Investition.
