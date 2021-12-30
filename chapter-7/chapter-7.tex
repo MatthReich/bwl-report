@@ -3,8 +3,48 @@
 
 \section{Definition}
 
+Mit der Annuitätenmethode lässt sich die Annuität berrechnen. Unter Annuität versteht man die Überschüsse, Zinsen oder Renten einer Investition pro Periode. Dies erlaubt die Beurteilung von Erweiterungs- und Ersatzinvestitionen im Sinne einer Einkommensmaximierung. Zudem können, ohne die Berücksichtigung einer Differenzinvestition, Investitionen unterschiedlicher Anschaffungswerte und Nutzungsdauern verglichen werden. Die Annuitätenmethode baut auf der \hyperref[Kapitalwertmethode]{Kapitalwertmethode} auf. \footnote{\cite{bwllexicon-annu}} \footnote{\cite{wikipedia-annu}}
+
 \section{Berechnung}
+
+Die Annuität (a) lässt sich nur errechnen, sofern der Nettobarwert (NBF) und der Kapitalwiedergewinnfaktor (KWF) bekannt sind. Der KWF wird auch Annuitätenfaktor (ANF) genannt. Einfach gesagt ist die Annuität das Produkt aus dem NBF und des ANF, dargestellt in der Formel \eqref{eq:annuitaeat}. Der ANF lässt sich durch den risikolosen Zinssatz am Kapitalmarkt (r) und der Laufzeit der Investitionsprojektes (n) errechen. Dafür wird die Formel \eqref{eq:annuitaeatsfaktor} benutzt.\footnote{\cite{studyflix-annu}} \footnote{\cite{bwllexicon-annu}}
+
+\begin{equation}
+    a = NBF \cdot ANF
+    \label{eq:annuitaeat}
+\end{equation}
+
+\begin{equation}
+    ANF = \frac{ (1 + r)^n \cdot r }{ (1 + r)^n - 1 }
+    \label{eq:annuitaeatsfaktor}
+\end{equation}
 
 \section{Beispielrechnung}
 
+Herr Mustermann hat ein Investitionsprojekt mit einem Kapitalwert von 5000 € geplant, welches für 5 Jahre laufen soll. Der Zinssatz liegt bei 8\%.
+
+
+\subsection{Rechnung}
+
+Um den Annuitätenfaktor zu errechnen, setzen wir in der dafür vorgesehen Formel \eqref{eq:annuitaeatsfaktor} n = 5 und r = 0,08.
+
+\bigskip
+
+ANF = $\frac{ (1 + 0,08)^5 \cdot 0,08 }{ (1 + 0,08)^5 - 1 }$ = 0,2504564545
+
+\bigskip
+
+\noindent
+Um nun die Annuität zu bekommen, multipliziert man nach der Formel \eqref{eq:annuitaeat} die 5000 € mit dem zuvor ausgerechneten ANF:
+
+\bigskip
+
+Annuität = 5000 € $\cdot$ 0,2504564545 = 1252,2822725 € gekürzt 1252,28 €
+
+\subsection{Interpretation}
+
+Herr Mustermann hat eine Annuität von 1252,28 €, was bedeutet, dass diese Investition einen jährlichen Mehrbetrag von 1252,28 € erwirtschaftet. Da die Annuität nicht negativ ist, kann diese Investition als lohnend betrachtet werden.
+
 \section{Bewertung}
+
+Vorteil der Annuitätenmethode ist, dass die Zahlungen differenziert erfasst werden, weshalb eine einfache Vergleichbarkeit gegeben ist. Jedoch ist die Zuordnung der Zahlungen zu den Investitionsgütern schwierig, weil meistens mehrere Anlagen am Prozess beteiligt sind. Zudem beeinträchtigen äußerliche Einflüsse die Abschätzung von zukünfitigen Zahlungen, was zu einer verfälschten Annuität führen kann. 
