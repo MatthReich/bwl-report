@@ -52,6 +52,8 @@
 \RequirePackage[table]{xcolor}
 \RequirePackage{longtable}
 
+\usepackage{csquotes}
+
 \lstset{basicstyle=\footnotesize\ttfamily,breaklines=true}
 \lstset{framextopmargin=50pt}
 
