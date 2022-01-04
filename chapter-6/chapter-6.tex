@@ -3,22 +3,16 @@
 
 \section{Definition}
 
-Der Geschäftswertbeitrag (GWB), im Englischen Economic Value Added (EVA), definiert einen Residualgewinn, welcher eine absolute Nettogröße eines Gewinns nach Abzug der Kapitalkosten für das eingesetzte Gesamtkapital ergibt. Diese Kennzahl wurde in den 1990er Jahren in der Unternehmensberatung Stern Stewart entwickelt.\footnote{\cite{wikipedia-eva}} \footnote{\cite{controlling-eva}}
+Der \ac{gwb}, im Englischen \ac{eva}, ist eine absolute Wertbeitragskennzahl, welche, vereinfacht, der Differenz zwischen den Kapitalerlösen und den Kapitalkosten entspricht. Demnach wird genau dann zusätzlicher Wert geschaffen, wenn über die Kapitalkosten für Eigen- und Fremdkapital hinaus verdient wird. Der \ac{gwb} wurde in den 1990er Jahren in der Unternehmensberatung Stern Stewart entwickelt.\footnote{\cite{wikipedia-eva}} \footnote{\cite{controlling-eva}}
 
 \section{Berechnung}
 
-Der Geschäftswertbeitrag setzt sich aus drei Elementen zusammen: Dem operativen Gewinn nach Steuern (NOPAT - Net Operating Profit After Taxes), das betriebsnotwenige Vermögen (NOA - Net Operating Assets) und die gewichteten durchschnittlichen Kapitalkosten (WACC - Weighted Average Cost of Capital).\\
-Der NOPAT ist der Teil, der Operativ entschieden wird. Hierbei geht es darum, dass man das Richtige machen möchte, beziehungsweise etwas besser machen. Die NOA bezieht sich auf eine Entscheidung basierend auf der Investition. Hierbei wird die Verbindlichkeit aus dem laufenden Geschäft nicht berücksichtig, ebenfalls das Ergebnis der Finanzierungstätigkeit. Zuletzt gibt es noch die Finanzierungsentscheidung, welches durch das WACC repräsentiert wird. Zudem kann das WAAC eine gesicherte Aussage über das Unternehmensrisiko geben.\footnote{\cite{bwllexicon-eva}} \footnote{\cite{wikipedia-eva}}\\
-In folgender Abbildung \ref{fig:zsmgeschaeftswertbeitrag}\footnote{Quelle: \url{https://www.bwl-lexikon.de/app/uploads/economic-value-added.png}} sind die drei Bestandteile des Geschäftswertbeitrags im Zusammenhang grafisch dargestellt:
+Der Geschäftswertbeitrag setzt sich aus drei Elementen zusammen: Dem operativen Gewinn nach Steuern (\ac{nopat}), dem betriebsnotwendigem Vermögen (\ac{noa}) und den gewichteten durchschnittlichen Kapitalkosten (\ac{wacc}).\\
 
-\begin{figure}[!h]
-    \includegraphics[width=\linewidth]{./media/economic-value-added.png}
-    \caption{Zusammensetzung Geschäftswertbeitrag}
-    \label{fig:zsmgeschaeftswertbeitrag}
-\end{figure}
+Der NOPAT ist der Teil, der Operativ entschieden wird. Hierbei geht es darum, dass man das Richtige machen möchte, beziehungsweise etwas besser machen. Die NOA bezieht sich auf eine Entscheidung basierend auf der Investition. Hierbei wird die Verbindlichkeit aus dem laufenden Geschäft nicht berücksichtig, ebenfalls das Ergebnis der Finanzierungstätigkeit. Zuletzt gibt es noch die Finanzierungsentscheidung, welches durch das WACC repräsentiert wird. Zudem kann das WAAC eine gesicherte Aussage über das Unternehmensrisiko geben.\footnote{\cite{bwllexicon-eva}} \footnote{\cite{wikipedia-eva}}\\ %% TODO rework
 
 \noindent
-Es gibt zwei Methoden, um den GWB zu berechnen. Den subtraktiven Ansatz und den multiplikativen Ansatz. Beide Ansätze führen zum gleichen Berechnungsergebnis. Sie unterscheiden sich letztlich nur in der Fokussierung auf das absolute oder relative Erfolgsziel.
+Es gibt zwei Methoden, um den \ac{gwb} zu berechnen. Den subtraktiven Ansatz und den multiplikativen Ansatz. Beide Ansätze führen zum gleichen Berechnungsergebnis. Sie unterscheiden sich letztlich nur in der Fokussierung auf das absolute oder relative Erfolgsziel.
 
 \subsection{Subtraktiver Ansatz}
 
@@ -31,7 +25,7 @@ Bei dem subtraktiven Ansatz werden von dem operativen Jahresergebnis die durchsc
 
 \subsection{Multiplikativer Ansatz}
 
-Bei dem multiplikativen Ansatz werden von der (Ist-)Gesamtkapitalrendite (IRR - Internal Rate of Return) die durchschnittlichen Kapitalkosten abgezogen und auf dieses Ergebnis wird dann das betriebsnotwendige Vermögen multipliziert. Dies wird in folgender Formel \eqref{eq:mupliplikativ-gwb-geschaeftswertbeitrag}\footnote{\cite{wikipedia-eva}} dargestellt. In der Formel \eqref{eq:mupliplikativ-irr-geschaeftswertbeitrag}\footnote{\cite{controllingportal-eva}} wird die Berechnung der IRR für die Vollständigkeit dargestellt. Die IRR berechnet sich aus dem Quotienten aus dem operativen Gewinn nach Steuern und dem betriebsnotwendigem Vermögen multipliziert mit 100.
+Bei dem multiplikativen Ansatz werden von der (Ist-)Gesamtkapitalrendite (\ac{irr}) die durchschnittlichen Kapitalkosten abgezogen und auf dieses Ergebnis wird dann das betriebsnotwendige Vermögen multipliziert. Dies wird in folgender Formel \eqref{eq:mupliplikativ-gwb-geschaeftswertbeitrag}\footnote{\cite{wikipedia-eva}} dargestellt. In der Formel \eqref{eq:mupliplikativ-irr-geschaeftswertbeitrag}\footnote{\cite{controllingportal-eva}} wird die Berechnung der \ac{irr} für die Vollständigkeit dargestellt. Die \ac{irr} berechnet sich aus dem Quotienten des operativen Gewinns nach Steuern und dem betriebsnotwendigem Vermögen multipliziert mit 100.
 
 \begin{equation}
     GWB = (IRR - WACC) \cdot NOA
@@ -46,11 +40,11 @@ Bei dem multiplikativen Ansatz werden von der (Ist-)Gesamtkapitalrendite (IRR - 
 \bigskip
 
 \noindent
-Voraussetzung für diese Methode ist, dass das NOPAD immer größer als die Kapitalkosten, welche bei der Investition anfallen, ist.\footnote{\cite{bwllexicon-eva}}
+Voraussetzung für diese Methode ist, dass der \ac{nopat} immer größer als die Kapitalkosten ist, welche bei der Investition anfallen, ist.\footnote{\cite{bwllexicon-eva}}
 
 \section{Beispielrechnung}
 
-Da der Fokus auf der Berechnung des Geschäftswertbeitrags liegt, werden für die Beispielrechnungen die Werte bereits angenommen. Demzufolge beträgt der WACC 8\%, der NOPAT beträgt 10000 € und die NOA belaufen sich auf 90000 €.
+Da der Fokus auf der Berechnung des Geschäftswertbeitrags liegt, werden für die Beispielrechnungen die Werte bereits angenommen. Demzufolge beträgt der \ac{wacc} 8\%, der \ac{nopat} beträgt 10000 € und die NOA belaufen sich auf 90000 €.
 
 \subsection{Rechnung}
 
@@ -75,4 +69,4 @@ Der Geschäftswertbeitrag von 2800 € zeigt, dass die Rendite über den Kosten 
 
 \section{Bewertung}
 
-Der Geschäftswertbeitrag ist eine einfache Methode, um einen Betrag zu erhalten, wie sich eine Investition auswirkt. Jedoch ist die Berechnung an mehrere Faktoren gebunden, welche das Ergebnis sehr leicht verfälschen können. Auch die Entwicklung in der Zukunft ist durch den GWB nicht ersichtlich. Zuletzt lässt der Freiheitsgrad eines Unternehmens, Anpassungen vorzunehmen, die Vergleichbarkeit unterschiedlicher Jahre verringert.\footnote{\cite{controlling-eva}}
+Der Geschäftswertbeitrag ist eine einfache Methode, um herauszufinden, ob das Unternehmen in der betrachteten Investitionsperiode Werte geschaffen oder vernichtet hat. Die Berechnung des \ac{gwb}s findet nur innerhalb einer Periode statt und bezieht sich meist auf vergangenheitsorientierten Werten. Deshalb ist eine Einschätzung über die Entwicklung in der Zukunft nicht ersichtlich. Der Freiheitsgrad eines Unternehmens, Anpassungen vorzunehmen, verringert die Vergleichbarkeit unterschiedlicher Jahre. Jedoch lässt sich durch den \ac{gwb} ein möglicher Strategiewechsel diskutieren.\footnote{\cite{controlling-eva}}

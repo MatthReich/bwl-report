@@ -53,6 +53,7 @@
 \RequirePackage{longtable}
 
 \usepackage{csquotes}
+\usepackage{acronym}
 
 \lstset{basicstyle=\footnotesize\ttfamily,breaklines=true}
 \lstset{framextopmargin=50pt}
