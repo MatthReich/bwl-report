@@ -2,10 +2,13 @@
 \label{Kapitalwertmethode}
 
 \section{Definition}
-Die Kapitalwertmethode ist ein Verfahren der dynamischen Investitionsrechnung. Mit dieser Methode wird der Kapitalwert ausgerechnet, der die Summe aller Einzahlungen und Auszahlungen, auf den heutigen Stand abzinst und darstellt. Dieser Kapitalwert bildet sehr oft die Grundlage für Investitionsendscheidungen.
-
+Die Kapitalwertmethode ist auch bekannt als Nettobarwertmethode oder NPV-Methode (net present value).
+Sie ist ein zentrales Verfahren der dynamischen Wirtschaftlichkeitsrechnung. In diesem Verfahren wird der sogenannte Kapitalwert ermittelt. Der Kapitalwert entsteht aus der Summe der abgezinsten zukünftigen Erfolge einer Investition und wird oft als Entscheidungshilfe verwendet, um zwischen zwei oder mehreren Investitionsmöglichkeiten, die profitabelste auszuwählen. Außerdem wird der Kapitalwert auch verwendet, um den Wert von Sachanlagen (Grundstücken, Maschinen, Gebäuden, usw.), Finanzanlagen (Aktien, Anleihen, usw.) oder sogar von Unternehmen darzustellen.
+Der Kalkulationzins spielt eine wichtige Rolle in der Kapitalwertmethode. Sie stellt nämlich die verlangte Mindestrentabilität einer Investition dar und hat einen großen Einfluss auf die Höhe des Kapitalwertes.
+Aufgrund von verschiedenen Berechnungen und Abgrenzungen der zukünftigen Erfolge gibt es viele Varianten, wie man den Kapitalwert ausrechnet. Heutzutage üblich wird bei der Bewertung von Investitionen die Abzinsung von Einzahlungsüberschüssen verwendet.\footnote{\cite{wikipedia-kapitalwertmethode}}\footnote{\cite{weltsparen-kapitalwertmethode}}
+\newpage
 \section{Formel}
-Die Kapitalwertmethode wird mit folgender Formel ausgerechnet:
+Die Kapitalwertmethode berechnet man, indem man die Anfangsinvestition mit allen abgezinsten Cashflows summiert. Dabei sieht die Formel zur Kapitalwermethode wie folgt aus:
 \begin{align*}
     KW = -Z_{0} + \sum \limits_{t=1}^{T}{\frac{Z_{t}}{(1+r)^{t}}}
 \end{align*}
@@ -15,16 +18,23 @@ $T$  = Die Betrachtungsdauer\\
 $Z_t$ = Der Zahlungsstrom der Periode t. Besteht aus Einzahlungen - Auszahlungen.\\
 $r$ = Kalkulationszinssatz\\
 $t$ = Periode\\
-$KW$ = Kapitalwert \\ \\
-\newpage
+$KW$ = Kapitalwert
+\subsubsection{Erklärung}
+Der allererste Summand in der Periode $t = 0$ ist die Anfangsinvestition, weil der Nenner mit dem Kalkulationszinssatz hier immer eins ist, wird dieser aus der folgenden Summenformel herausgezogen. Dabei sollten man beachten, dass die Anfangsinvestition immer ein negativer Wert ist. Das $Z_t$
+steht in der Summenformel für alle Einzahlungen und Auszahlungen im Zeitpunkt $t$. Um jetzt herauszufinden wie viel $Z_t$ in der Gegenwart wert ist, wird eine Abzinsung mit dem Kalkulationszinssatz durchgeführt.
 \section{Interpretation}
 Um mit der Kapitalwertmethoden eine Investitionsendscheidung zu treffen, sollte man ihn wie folgend interpretieren:
 \begin{itemize}
     \item Wenn der Kapitalwert gleich 0 ist, bedeutet das für die Investition, dass wir unser eingesetztes Kapital auch wieder zurückbekommen. Es kommt bei so welchen Investitionen zu keinem Vorteil und Nachteil bzw. zu keinem Gewinn oder Verlust.
     \item Wenn der Kapitalwert größer als 0 ist, bedeutet das für die Investition, dass sie einen Gewinn einbringen wird und es empfehlenswert ist diese Investition durchzuführen.
-    \item Wenn der Kapitalwert kleiner als 0 ist, bedeutet das für die Investition, dass sie Verluste einbringen wird. Solche Investitionen sollte man vermeiden.
-\end{itemize}\footnote{\cite{studyflix-kapitalwertmethode}}
-
+    \item Wenn der Kapitalwert kleiner als 0 ist, bedeutet das für die Investition, dass sie Verluste einbringen wird. Solche Investitionen sollte man vermeiden.\footnote{\cite{studyflix-kapitalwertmethode}}
+\end{itemize}
+\newpage
+\section{Kritik}
+\subsubsection{Vorteile}
+Der Vorteil an der Kapitalwertmethode ist es, dass es sich um ein einfaches Verfahren handelt, die eine einfache Interpretation ermöglicht. Weil es sich hier um eine dynamische Rechnung handelt, wird der zeitliche Anfall der Zahlungen beachtet, die bei den statischen Verfahren ignoriert wird.
+\subsubsection{Nachteile}
+Ein großes Problem bei der Kapitalwertmethode ist die Annahme eines vollkommenen Marktes. Ins besonders der Kalkulationszinssatz und die Höhe der zukünftigen Zahlungsströme, die auf subjektiven Annahmen basieren können zu Fehlern führen. Demnach sollten diese beiden Faktoren immer genauer unter die Lupe genommen werden, wenn man die Kapitalwertmethode als eine Entscheidungshilfe verwendet.\footnote{\cite{wikipedia-kapitalwertmethode}}
 \section{Beispiel}
 Herr Mustermann möchte mit den steigenden Immobilienpreisen profitieren. Dafür überlegt er sich eine Immobilie für 300.000 Euro zu erwerben. Nach 2 Jahren würde er diese Immobilie wieder mit Gewinn für 320.000 Euro verkaufen. Als Alternative kann Herr Mustermann allerdings bei der Bank für den gleichen Zeitraum risikoarm seine Investition als Festgeld anlegen mit einem Zinssatz von 3 Prozent.\\ \\
 Um seine Investitionsendscheidung zu treffen, rechnet Herr Mustermann den Kapitalwert wie folgt aus:\\
