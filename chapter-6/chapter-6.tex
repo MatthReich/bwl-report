@@ -40,7 +40,7 @@ Bei dem multiplikativen Ansatz werden von der (Ist-)Gesamtkapitalrendite (\ac{ir
 \noindent
 Voraussetzung für diese Methode ist, dass der \ac{nopat} immer größer als die Kapitalkosten ist, welche bei der Investition anfallen, ist.\footnote{\cite{bwllexicon-eva}}
 
-\section{Beispielrechnung}
+\section{Beispielrechnung 1}
 
 Da der Fokus auf der Berechnung des Geschäftswertbeitrags liegt, werden für die Beispielrechnungen die Werte bereits angenommen. Demzufolge beträgt der \ac{wacc} 8\%, der \ac{nopat} beträgt 10000 € und die \ac{noa} belaufen sich auf 90000 €.
 
@@ -51,7 +51,7 @@ Da der Fokus auf der Berechnung des Geschäftswertbeitrags liegt, werden für di
 Mit der Anwendung des subtraktiven Ansatzes \eqref{eq:subtraktiver-geschaeftswertbeitrag} ergibt sich folgende Rechnung:
 
 \bigskip
-GWB = 10000 € - 0,08 $\cdot$ 90000 € = 2800 €
+$GWB = 10000 \text{€} - 0,08 \cdot 90000 \text{€} = 2800 \text{€}$
 
 
 \subsubsection{Multiplikativer Ansatz}
@@ -59,11 +59,78 @@ GWB = 10000 € - 0,08 $\cdot$ 90000 € = 2800 €
 Da beide Ansätze dasselbe Ergebnis haben sollten, sollte auch der multiplikative Ansatz \eqref{eq:mupliplikativ-gwb-geschaeftswertbeitrag} einen \ac{gwb} von 2800 ergeben:
 
 \bigskip
-GWB = (($\frac{10000}{90000})$ - 0,08) $\cdot$ 90000 € = 2800 €
+$GWB = ((\frac{10000 \text{€}}{90000 \text{€}}) - 0,08) \cdot 90000 \text{€} = 2800 \text{€}$
 
 \subsection{Interpretation}
 
-Der Geschäftswertbeitrag von 2800 € zeigt, dass die Rendite über den Kosten für das eingesetzte Kapital liegt, weshalb diese Investition durchaus durchführbar ist. Wäre der Wert negativ, würde die Investition Verluste aufweisen und es wäre davon abzuraten, diese zu tätigen.
+Der Geschäftswertbeitrag von 2800 € zeigt, dass die Rendite über den Kosten für das eingesetzte Kapital liegt, weshalb diese Investition durchaus durchführbar ist und Werte schaffen wird. Wäre der Wert negativ, würde die Investition Verluste aufweisen und es wäre davon abzuraten, diese zu tätigen.
+
+\section{Beispielrechnung 2}
+
+Das Unternehmen Muster wird für zwei Quartale betrachtet. In dem ersten Quartal hat das Unternehmen 100000 € in ein Projekt investiert, welches sie in Zukunft voran bringen soll. Der \ac{wacc} beläuft sich auf 8\% und der \ac{nopat} beläuft sich auf 10000 €. Im zweiten Quartal investiert das Unternehmen Muster mit gleichbleibendem \ac{wacc} aber um 5000€ erhöhtem \ac{nopat} einen Wert von 200000 €. Nun möchte das Unternehmen wissen, ob sie in den zwei Quartalen ihren Unternehmenswert erhöhen konnten, oder ob dieser gesunken ist. Falls dieser gesunken ist, möchte das Unternehmen gerne wissen, was für Möglichkeiten es hat, ihren Wert wieder zu steigern.\\
+Um die angegeben Daten nochmal visuell besser dargestellt zu sehen, sind diese in folgender Tabelle \eqref{tb:evaQuartale} aufgezeigt. Die Beträge sind in Euro zu betrachten.
+
+\bigskip
+\begin{table}[!h]
+    \begin{tabular}{lll}
+        \cline{1-3} \rowcolor{gray}
+                             & 1. Quartal & 2. Quartal \\ \cline{1-3} \rowcolor{white}
+        Investiertes Kapital & 100000     & 200000     \\ \cline{1-3} \rowcolor{white}
+        WACC                 & 8\%        & 8\%        \\ \cline{1-3} \rowcolor{white}
+        NOPAT                & 10000      & 15000      \\ \cline{1-3} \rowcolor{white}
+    \end{tabular}
+    \caption{Übersicht der zwei Quartale von Unternehmen Muster}
+    \label{tb:evaQuartale}
+\end{table}
+
+\subsection{Rechnung}
+
+\subsubsection{Subtraktiver Ansatz}
+
+Für das erste Quartal ergibt sich ein \ac{gwb} nach der Formel \eqref{eq:subtraktiver-geschaeftswertbeitrag} von:
+
+\bigskip
+$GWB_{Quartal 1} = 10000 \text{€} - 0,08 \cdot 100000 \text{€} = 2000 \text{€}$
+
+\bigskip
+\noindent
+und für das zweite Quartal ein \ac{gwb} von:
+
+\bigskip
+$GWB_{Quartal 2} = 15000 \text{€} - 0,08 \cdot 200000 \text{€} = -1000 \text{€}$
+
+\subsubsection{Multiplikativer Ansatz}
+
+Unter Anwendung des multiplikativem Ansatzes \eqref{eq:mupliplikativ-gwb-geschaeftswertbeitrag} beläuft sich der \ac{gwb} ebenfalls für Quartal 1 auf 2000 € und für Quartal 2 auf -1000 €.
+
+\bigskip
+$GWB_{Quartal 1} = ((\frac{10000 \text{€}}{100000 \text{€}}) - 0,08) \cdot 100000 \text{€} = 2000 \text{€}$
+
+\bigskip
+$GWB_{Quartal 2} = ((\frac{15000 \text{€}}{200000 \text{€}}) - 0,08) \cdot 200000 \text{€} = -1000 \text{€}$
+
+
+\subsubsection{Ergebnis}
+
+In folgender Tabelle \eqref{tb:evaQuartaleBerechnet} sind die Ergebnisse nochmals übersichtlich dargestellt.
+
+\begin{table}[!h]
+    \begin{tabular}{lll}
+        \cline{1-3} \rowcolor{gray}
+                             & 1. Quartal & 2. Quartal \\ \cline{1-3} \rowcolor{white}
+        Investiertes Kapital & 100000     & 200000     \\ \cline{1-3} \rowcolor{white}
+        WACC                 & 8\%        & 8\%        \\ \cline{1-3} \rowcolor{white}
+        NOPAT                & 10000      & 15000      \\ \hline \rowcolor{white}
+        GWB                  & 2000       & -1000      \\ \cline{1-3} \rowcolor{white}
+    \end{tabular}
+    \caption{Übersicht der zwei Quartale von Unternehmen Muster inklusive \ac{gwb}}
+    \label{tb:evaQuartaleBerechnet}
+\end{table}
+
+\subsection{Interpretation}
+
+Nach dem das Unternehmen Muster im ersten Quartal ihren Wert um 2000 € steigern konnte, verlor sie im zweiten Quartal 1000 € an Wert. Im Gesamten konnte das Unternehmen zwar ihren Wert steigern, jedoch ist der Werteverlust ein Indiz dafür, dass es eine Fehleinschätzung gab. Diese könnte mögliche Investoren, die das Unternehmen Muster gerne bei ihren Projekten unterstützten würden, davon abhalten, da diese davon ausgehen könnten, dass das Unternehmen weiter an Werten verlieren wird in Zukunft.\\
+Um im nächsten Quartal wieder eine Wertsteigerung zu erlangen, hat das Unternehmen Muster mehrere Möglichkeiten. Zum einen kann es das investierte Kapital senken. Hätte es im zweiten Quartal nur 150000 € anstatt den 200000 € investiert, hätte es eine Wertsteigerung von $15000 \text{€} - (0,08 \cdot 150000 \text{€}) =$ 3000 € gegeben. Des weiteren hätte das Unternehmen ein anderes Projekt mit einer höheren Rendite auswählen können. Hätte es ein Projekt mit einem \ac{wacc} von 7,5\% oder weniger investiert, wäre der\ac{gwb} neutral ($15000 \text{€} - (0,075 \cdot 200000 \text{€}) = 0 \text{€}$) oder positiv ($15000 \text{€} - (0,07 \cdot 200000 \text{€}) = 1000 \text{€}$). Zuletzt hätte das Unternehmen die Möglichkeit mehr Gewinn nach Steuern zu erwirtschaften. Wenn es dem unternehmen gelingen würde, 1000 € mehr, also einen \ac{nopat} von 16000 € zu erwirtschaften, wären sie neutral geblieben ($16000 \text{€} - (0,08 \cdot 200000 \text{€}) = 0 \text{€}$). Bei einem Gewinn von über 2000€ wäre der Wert des Unternehmens sogar gestiegen ($17000 \text{€} - (0,075 \cdot 200000 \text{€}) = 1000 \text{€}$).\footnote{\cite{studyflix-eva}} \footnote{\cite{controlling-eva}}
 
 \section{Bewertung}
 
