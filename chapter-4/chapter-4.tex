@@ -1,9 +1,11 @@
 \chapter{Interne Zinsfußmethode}
 \label{Interne Zinsfussmethode}
 \section{Definition}
-Die interne Zinsfußmethode gehört, wie die Kapitalwertmethode, zu einem der dynamischen Verfahren der Wirtschaftlichkeitsrechnung. Sie wird auch oft als interne Rendite oder als interner Zinssatz bezeichnet. Dieses Verfahren stellt die Effektivverzinsung einer Investition dar, bei dem der Kapitalwert oder auch manchmal als Nettobarwert bezeichnet gleich null ist.
+Die interne Zinsfußmethode gehört, wie die Kapitalwertmethode, zu einem der dynamischen Verfahren der Wirtschaftlichkeitsrechnung. Das Ziel dieses Verfahren ist es, den internen Zinsfuß auszurechnen, der oft auch als interne Rendite oder als interner Zinssatz bezeichnet wird. Der interne Zinsfuß stellt die Effektivverzinsung einer Investition dar, bei dem der Kapitalwert gleich null ist. Wie bei der Kapitalwertmethode geht man bei diesem Verfahren auch von einem vollständigen Markt aus. Der interne Zinsfuß dient, wie der Kapitalwert als eine weitere Entscheidungshilfe um korrekte Investition zu tätigen.\footnote{\cite{studyflix-interner-zinsfuss}}
 \section{Formel}
-Der interne Zinsfuß wird mit folgender Formel ausgerechnet:
+Die interne Zinsfußmethode basiert auf der Kapitalwertmethode, weswegen wir wieder unsere Kapitalwertfunktion brauchen. Wie schon vorher erwähnt, ist der interne Zinssatz als Diskontierungszinssatz
+definiert, bei dem der Barwert der Rückflüsse einer Investition zuzüglich des Barwertes des Liquidationserlöses gleich dem Barwert der Investitionsausgaben ist oder ganz einfach formuliert, bei dem der Kapitalwert gleich null ist.\\
+Schlussfolgernd bedeutet, dies das wir die Nullstelle unserer Kapitalwertfunktion feststellen, indem wir folgende Gleichung nach $r$ auflösen:\footnote{\cite{lex-interner-zinsfuss}}\newpage
 \begin{align*}
     KW = -Z_{0} + \sum \limits_{t=1}^{T}{\frac{Z_{t}}{(1+r)^{t}}} = 0
 \end{align*}
@@ -14,16 +16,11 @@ $Z_t$ = Der Zahlungsstrom der Periode t. Besteht aus Einzahlungen - Auszahlungen
 $r$ = Kalkulationszinssatz\\
 $t$ = Periode\\
 $KW$ = Kapitalwert
-\newpage
 \section{Berechnung vom internen Zinsfuß}
-Wie man an der Formel schon sieht, ist es schwer so einen Term nach r aufzulösen. Deshalb wird der interne Zinsfuß meistens mit Interpolation, also Ausprobieren, berechnet. Es gibt jedoch zwei spezielle Fälle, wo man den internen Zinsfuß auch ohne Interpolation berechnen kann.
-\subsection{Fall 1}
-Der erste Spezialfall ist, wenn die Investition nur bis zu 2 Perioden umfasst. Dadurch wird die Formel zu einer quadratischen Gleichung die man auf gewohnter Weise lösen kann. Dazu ein kleines Beispiel:
-\begin{align*}
-    T = 2                                                                                                 \\
-    Z_0 =-1000 \text{ Euro}                                                                               \\
-    Z_1 = 600 \text{ Euro}                                                                                \\
-    Z_2 = 600 \text{ Euro}                                                                                \\
+Wie man an der Gleichung erkennen kann bewirkt eine Investitionsdauer von n Jahren eine Kapitalwertfunktion n-ten Grades. Dies hat zur Folge, dass die Berechnung des internen Zinsfußes sich sehr erschwert. Eine Möglichkeit eine Funktion n-ten Grades zu lösen ist die lineare Interpolation, also dem Ausprobieren von verschiedenen Werten. Es gibt jedoch mehrere spezielle Fälle, die uns erlauben den internen Zinsfuß auch, ohne Hilfe von Interpolation zu berechnen.
+\subsection{Zahlungsdauer von maximal 2 Jahren}
+Der erste Spezialfall ist, wenn die Investition nur bis zu 2 Perioden umfasst. Dadurch wird die Formel zu einer quadratischen Gleichung die man auf gewohnter Weise lösen kann. Dazu ein kleines Beispiel mit $T = 2$, $Z_0 = -1000$ Euro, $Z_1 = 600$ Euro, $Z_2 = 600$ Euro,:
+\begin{align*}                                                                               \\
     -1000 + \frac{600}{(1+r)^1} + \frac{600}{(1+r)^2} = 0 & \text{\phantom m}|:(-1000)                    \\
     1 - \frac{0,6}{1+r} - \frac{0,6}{(1+r)^2} = 0         & \text{\phantom m}|\cdot(1+r^2)                \\
     (1+r)^2 - 0,6\cdot(1+r) - 0,6 = 0                     & \text{\phantom m}|(1+r) = x                   \\
@@ -35,12 +32,11 @@ Der erste Spezialfall ist, wenn die Investition nur bis zu 2 Perioden umfasst. D
 \begin{center}
     Der interne Zinsfuß beträgt 13,1 \%.
 \end{center}
+\newpage
 \subsubsection{Erklärung}
-\smallskip
 Wir fangen damit an, die Formel mit unseren Angaben auszufüllen. Danach formen wir die Gleichung so um, damit wir die $(1+r)$ in $x$ substituieren können. Danach setzen wir die PQ-
 oder Mitternachtsformel ein, um die beiden $x$ auszurechnen und nehmen von den beiden Zahlen die positive. Jetzt substituieren wir wieder das $x$ zurück in $(1+r)$ und können so das $r$ berechnen, um unsere Rechnung zu beenden.
-\newpage
-\subsection{Fall 2}
+\subsection{Jährlich konstante Rückflüsse}
 Der zweite Spezialfall ist einfacher als der erste. Man kann nähmlich genau sehen was der interne Zinsfuß beträgt. Ein kleines Beispiel dazu:
 \begin{align*}
     KW = 0                   \\
@@ -55,6 +51,11 @@ Der zweite Spezialfall ist einfacher als der erste. Man kann nähmlich genau seh
     interne Zinsfuß beträgt 5 \%.
 \end{center}
 Man kann an den verschiedenen Cashflows sehen, dass wir in jeder Periode fünf Prozent unserer Anfangsauszahlung bekommen, Zusätzlich erhalten wir in der letzten Periode unsere Anfangsauszahlung plus die fünf Prozent zurück, daraus schlussfolgern wir, dass der interne Zinsfuß 5 Prozent betragen muss.
+\subsection{Der Zweizahlungsfall}
+Dieser spezial Fall macht sich dadurch bemerkbar, dass es neben der Anfangsinvestition nur noch zu einer weiteren Einzahlung zum Ende der Investition kommt. Es kommt zu keinen zwischenzeitlichen Ein- und Auszahlungen. Daraus resultiert folgende Kapitalwertgleichung, die man leicht umformen kann nach $r$:\footnote{\cite{lex-interner-zinsfuss}}\\
+\begin{center}
+    $ KW = -Z_{0} + \frac{Z_{t}}{(1+r)^{t}} \rightarrow r = \sqrt[t]{\frac{Z_t}{Z_0}} $
+\end{center}
 \section{Interpretation}
-Grundlegend sollten Investitionen, die einen höheren internen Zinssatz als der Marktzinssatz haben, durchgeführt werden. Das bedeutet nämlich, dass wir eine höhere Verzinsung als durchschnittlich bekommen. Zusätzlich sollte man beachten, dass ein höherer interner Zinsfuß nicht gleich bedeutet, dass die Investition besser ist. Der interne Zinsfuß ist leider nicht so einfach zu bewerten, wie der Kapitalwert der Kapitalwertmethode, daher wird in der Praxis auch die Kapitalwertmethode bevorzugt.
-\footnote{\cite{studyflix-interner-zinsfuss}}
+Um den internen Zinsfuß richtig interpretieren zu können muss man zunächst verstehen, dass es sich hier um eine Renditekennziffer handelt und nicht einem absoluten Maßstab wie beim Kapitalwert. Der interne Zinsfuß sollte außerdem auch nie, als alleiniges Kriterium verwendet werden, um eine Investitionsendscheidung zu treffen. Er sollte immer mit der Mindestrendite verglichen werden. Ein Investitionsobjekt ist erst dann Vorteilhaft, wenn der interne Zinsfuß mindestens so hoch ist wie der Kalkulationszinssatz. Am besten wird diese Regel mit dem Kapitalwert erklärt. Erzielt eine Investition einen positiven Kapitalwert entsteht neben Rückzahlung und Verzinsung des Kapitals ein Überschuss in Höhe des Kapitalwertes. Ist der interne Zinsfuß gleich des Kalkulationszinssatzes bedeutet, dass die Investition noch in der Lage ist die Investitionsausgaben zu amortisieren. Ist der interne Zinsfuß kleiner, als der Kalkulationszinssatz führt dies zu einem negativen Kapitalwert. Grundlegend sollten auch Investitionen durchgeführt werden, die einen höheren internen Zinsfuß als der Marktzinssatz haben. Da dies bedeutet, dass wir einen höheren Zinssatz als der Durchschnitt bekommen. Der interne Zinssatz ist nicht so einfach zu bewerten, weswegen man in der Praxis den Kapitalwert bevorzugt.
+\footnote{\cite{lex-interner-zinsfuss}}\footnote{\cite{studyflix-interner-zinsfuss}}
